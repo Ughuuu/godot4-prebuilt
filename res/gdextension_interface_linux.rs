@@ -4572,6 +4572,18 @@ pub type GDExtensionInterfaceDictionaryOperatorIndexConst = ::std::option::Optio
         p_key: GDExtensionConstVariantPtr,
     ) -> GDExtensionVariantPtr,
 >;
+#[doc = " @name dictionary_set_typed\n @since 4.4\n\n Makes a Dictionary into a typed Dictionary.\n\n @param p_self A pointer to the Dictionary.\n @param p_key_type The type of Variant the Dictionary key will store.\n @param p_key_class_name A pointer to a StringName with the name of the object (if p_key_type is GDEXTENSION_VARIANT_TYPE_OBJECT).\n @param p_key_script A pointer to a Script object (if p_key_type is GDEXTENSION_VARIANT_TYPE_OBJECT and the base class is extended by a script).\n @param p_value_type The type of Variant the Dictionary value will store.\n @param p_value_class_name A pointer to a StringName with the name of the object (if p_value_type is GDEXTENSION_VARIANT_TYPE_OBJECT).\n @param p_value_script A pointer to a Script object (if p_value_type is GDEXTENSION_VARIANT_TYPE_OBJECT and the base class is extended by a script)."]
+pub type GDExtensionInterfaceDictionarySetTyped = ::std::option::Option<
+    unsafe extern "C" fn(
+        p_self: GDExtensionTypePtr,
+        p_key_type: GDExtensionVariantType,
+        p_key_class_name: GDExtensionConstStringNamePtr,
+        p_key_script: GDExtensionConstVariantPtr,
+        p_value_type: GDExtensionVariantType,
+        p_value_class_name: GDExtensionConstStringNamePtr,
+        p_value_script: GDExtensionConstVariantPtr,
+    ),
+>;
 #[doc = " @name object_method_bind_call\n @since 4.1\n\n Calls a method on an Object.\n\n @param p_method_bind A pointer to the MethodBind representing the method on the Object's class.\n @param p_instance A pointer to the Object.\n @param p_args A pointer to a C array of Variants representing the arguments.\n @param p_arg_count The number of arguments.\n @param r_ret A pointer to Variant which will receive the return value.\n @param r_error A pointer to a GDExtensionCallError struct that will receive error information."]
 pub type GDExtensionInterfaceObjectMethodBindCall = ::std::option::Option<
     unsafe extern "C" fn(
