@@ -1704,7 +1704,6 @@ pub struct GDExtensionClassCreationInfo4 {
     pub get_virtual_func: GDExtensionClassGetVirtual,
     pub get_virtual_call_data_func: GDExtensionClassGetVirtualCallData,
     pub call_virtual_with_data_func: GDExtensionClassCallVirtualWithData,
-    pub get_rid_func: GDExtensionClassGetRID,
     pub class_userdata: *mut ::std::os::raw::c_void,
 }
 #[test]
@@ -1714,7 +1713,7 @@ fn bindgen_test_layout_GDExtensionClassCreationInfo4() {
     let ptr = UNINIT.as_ptr();
     assert_eq!(
         ::std::mem::size_of::<GDExtensionClassCreationInfo4>(),
-        160usize,
+        152usize,
         concat!("Size of: ", stringify!(GDExtensionClassCreationInfo4))
     );
     assert_eq!(
@@ -1933,18 +1932,8 @@ fn bindgen_test_layout_GDExtensionClassCreationInfo4() {
         )
     );
     assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).get_rid_func) as usize - ptr as usize },
-        144usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(GDExtensionClassCreationInfo4),
-            "::",
-            stringify!(get_rid_func)
-        )
-    );
-    assert_eq!(
         unsafe { ::std::ptr::addr_of!((*ptr).class_userdata) as usize - ptr as usize },
-        152usize,
+        144usize,
         concat!(
             "Offset of field: ",
             stringify!(GDExtensionClassCreationInfo4),
