@@ -1977,6 +1977,10 @@ pub const GDEXTENSION_METHOD_ARGUMENT_METADATA_REAL_IS_FLOAT:
     GDExtensionClassMethodArgumentMetadata = 9;
 pub const GDEXTENSION_METHOD_ARGUMENT_METADATA_REAL_IS_DOUBLE:
     GDExtensionClassMethodArgumentMetadata = 10;
+pub const GDEXTENSION_METHOD_ARGUMENT_METADATA_INT_IS_CHAR16:
+    GDExtensionClassMethodArgumentMetadata = 11;
+pub const GDEXTENSION_METHOD_ARGUMENT_METADATA_INT_IS_CHAR32:
+    GDExtensionClassMethodArgumentMetadata = 12;
 pub type GDExtensionClassMethodArgumentMetadata = ::std::os::raw::c_uint;
 pub type GDExtensionClassMethodCall = ::std::option::Option<
     unsafe extern "C" fn(
