@@ -4082,6 +4082,10 @@ pub type GDExtensionInterfaceVariantHasKey = ::std::option::Option<
         r_valid: *mut GDExtensionBool,
     ) -> GDExtensionBool,
 >;
+#[doc = " @name variant_get_object_instance_id\n @since 4.4\n\n Gets the object instance ID from a variant of type GDEXTENSION_VARIANT_TYPE_OBJECT.\n\n If the variant isn't of type GDEXTENSION_VARIANT_TYPE_OBJECT, then zero will be returned.\n The instance ID will be returned even if the object is no longer valid - use `object_get_instance_by_id()` to check if the object is still valid.\n\n @param p_self A pointer to the Variant.\n\n @return The instance ID for the contained object."]
+pub type GDExtensionInterfaceVariantGetObjectInstanceId = ::std::option::Option<
+    unsafe extern "C" fn(p_self: GDExtensionConstVariantPtr) -> GDObjectInstanceID,
+>;
 #[doc = " @name variant_get_type_name\n @since 4.1\n\n Gets the name of a Variant type.\n\n @param p_type The Variant type.\n @param r_name A pointer to a String to store the Variant type name."]
 pub type GDExtensionInterfaceVariantGetTypeName = ::std::option::Option<
     unsafe extern "C" fn(p_type: GDExtensionVariantType, r_name: GDExtensionUninitializedStringPtr),
