@@ -56395,6 +56395,10 @@
 						{
 							"name": "BLEND_MODE_DISABLED",
 							"value": 4
+						},
+						{
+							"name": "BLEND_MODE_PREMULTIPLIED_ALPHA",
+							"value": 5
 						}
 					]
 				}
@@ -100724,6 +100728,28 @@
 						{
 							"name": "code",
 							"type": "String"
+						}
+					]
+				},
+				{
+					"name": "add_apple_embedded_platform_spm_package",
+					"is_const": false,
+					"is_vararg": false,
+					"is_static": false,
+					"is_virtual": false,
+					"hash": 3533781844,
+					"arguments": [
+						{
+							"name": "url",
+							"type": "String"
+						},
+						{
+							"name": "version",
+							"type": "String"
+						},
+						{
+							"name": "products",
+							"type": "PackedStringArray"
 						}
 					]
 				},
