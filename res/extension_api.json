@@ -117448,6 +117448,18 @@
 						{
 							"name": "CUSTOMIZATION_DELETE",
 							"value": 8
+						},
+						{
+							"name": "CUSTOMIZATION_NAVIGATION_BUTTONS",
+							"value": 9
+						},
+						{
+							"name": "CUSTOMIZATION_DRIVE_SELECTOR",
+							"value": 10
+						},
+						{
+							"name": "CUSTOMIZATION_FILTERS",
+							"value": 11
 						}
 					]
 				}
@@ -118292,6 +118304,27 @@
 					"setter": "set_customization_flag_enabled",
 					"getter": "is_customization_flag_enabled",
 					"index": 8
+				},
+				{
+					"type": "bool",
+					"name": "navigation_buttons_enabled",
+					"setter": "set_customization_flag_enabled",
+					"getter": "is_customization_flag_enabled",
+					"index": 9
+				},
+				{
+					"type": "bool",
+					"name": "drive_selector_enabled",
+					"setter": "set_customization_flag_enabled",
+					"getter": "is_customization_flag_enabled",
+					"index": 10
+				},
+				{
+					"type": "bool",
+					"name": "filters_enabled",
+					"setter": "set_customization_flag_enabled",
+					"getter": "is_customization_flag_enabled",
+					"index": 11
 				},
 				{
 					"type": "String",
@@ -194228,6 +194261,18 @@
 					}
 				},
 				{
+					"name": "get_primary_view_count",
+					"is_const": true,
+					"is_vararg": false,
+					"is_static": false,
+					"is_virtual": false,
+					"hash": 3905245786,
+					"return_value": {
+						"type": "int",
+						"meta": "uint32"
+					}
+				},
+				{
 					"name": "get_view_configuration",
 					"is_const": true,
 					"is_vararg": false,
@@ -197868,6 +197913,37 @@
 			"api_type": "core"
 		},
 		{
+			"name": "OpenXRFoveatedInsetViewport",
+			"is_refcounted": false,
+			"is_instantiable": true,
+			"inherits": "SubViewport",
+			"api_type": "core",
+			"methods": [
+				{
+					"name": "get_xr_origin3d",
+					"is_const": true,
+					"is_vararg": false,
+					"is_static": false,
+					"is_virtual": false,
+					"hash": 505038244,
+					"return_value": {
+						"type": "XROrigin3D"
+					}
+				},
+				{
+					"name": "get_xr_camera3d",
+					"is_const": true,
+					"is_vararg": false,
+					"is_static": false,
+					"is_virtual": false,
+					"hash": 1715292258,
+					"return_value": {
+						"type": "XRCamera3D"
+					}
+				}
+			]
+		},
+		{
 			"name": "OpenXRFrameSynthesisExtension",
 			"is_refcounted": false,
 			"is_instantiable": true,
@@ -199070,6 +199146,32 @@
 					]
 				},
 				{
+					"name": "ViewConfiguration",
+					"is_bitfield": false,
+					"values": [
+						{
+							"name": "VIEW_CONFIGURATION_MONO",
+							"value": 0
+						},
+						{
+							"name": "VIEW_CONFIGURATION_STEREO",
+							"value": 1
+						},
+						{
+							"name": "VIEW_CONFIGURATION_STEREO_WITH_INSET",
+							"value": 2
+						},
+						{
+							"name": "VIEW_CONFIGURATION_UNSET",
+							"value": 254
+						},
+						{
+							"name": "VIEW_CONFIGURATION_UNKNOWN",
+							"value": 255
+						}
+					]
+				},
+				{
 					"name": "Hand",
 					"is_bitfield": false,
 					"values": [
@@ -199366,6 +199468,17 @@
 					"hash": 36873697,
 					"return_value": {
 						"type": "bool"
+					}
+				},
+				{
+					"name": "get_active_view_configuration",
+					"is_const": true,
+					"is_vararg": false,
+					"is_static": false,
+					"is_virtual": false,
+					"hash": 3905272016,
+					"return_value": {
+						"type": "enum::OpenXRInterface.ViewConfiguration"
 					}
 				},
 				{
