@@ -9451,6 +9451,14 @@
 					"hash": 3918633141
 				},
 				{
+					"name": "inverse",
+					"return_type": "Vector2",
+					"is_vararg": false,
+					"is_const": true,
+					"is_static": false,
+					"hash": 2428350749
+				},
+				{
 					"name": "posmod",
 					"return_type": "Vector2",
 					"is_vararg": false,
@@ -74226,6 +74234,23 @@
 							"type": "StringName"
 						}
 					]
+				},
+				{
+					"name": "is_class_exposed",
+					"is_const": true,
+					"is_vararg": false,
+					"is_static": false,
+					"is_virtual": false,
+					"hash": 2619796661,
+					"return_value": {
+						"type": "bool"
+					},
+					"arguments": [
+						{
+							"name": "class",
+							"type": "StringName"
+						}
+					]
 				}
 			]
 		},
@@ -119227,6 +119252,36 @@
 							"type": "Control"
 						}
 					]
+				},
+				{
+					"name": "get_title_bar_control",
+					"is_const": true,
+					"is_vararg": false,
+					"is_static": false,
+					"is_virtual": false,
+					"hash": 1065994134,
+					"return_value": {
+						"type": "Control"
+					},
+					"arguments": [
+						{
+							"name": "index",
+							"type": "int",
+							"meta": "int64"
+						}
+					]
+				},
+				{
+					"name": "get_title_bar_control_count",
+					"is_const": true,
+					"is_vararg": false,
+					"is_static": false,
+					"is_virtual": false,
+					"hash": 3905245786,
+					"return_value": {
+						"type": "int",
+						"meta": "int32"
+					}
 				},
 				{
 					"name": "remove_title_bar_control",
