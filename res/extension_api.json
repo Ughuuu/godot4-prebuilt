@@ -199564,6 +199564,17 @@
 					]
 				},
 				{
+					"name": "get_recommended_target_size",
+					"is_const": true,
+					"is_vararg": false,
+					"is_static": false,
+					"is_virtual": false,
+					"hash": 3341600327,
+					"return_value": {
+						"type": "Vector2"
+					}
+				},
+				{
 					"name": "get_render_target_size_multiplier",
 					"is_const": true,
 					"is_vararg": false,
