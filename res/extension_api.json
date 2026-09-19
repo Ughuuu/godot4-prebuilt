@@ -277551,6 +277551,30 @@
 						{
 							"name": "SCROLL_HINT_MODE_BOTTOM_AND_RIGHT",
 							"value": 3
+						},
+						{
+							"name": "SCROLL_HINT_MODE_TOP_AND_BOTTOM",
+							"value": 4
+						},
+						{
+							"name": "SCROLL_HINT_MODE_LEFT_AND_RIGHT",
+							"value": 5
+						},
+						{
+							"name": "SCROLL_HINT_MODE_TOP",
+							"value": 6
+						},
+						{
+							"name": "SCROLL_HINT_MODE_BOTTOM",
+							"value": 7
+						},
+						{
+							"name": "SCROLL_HINT_MODE_LEFT",
+							"value": 8
+						},
+						{
+							"name": "SCROLL_HINT_MODE_RIGHT",
+							"value": 9
 						}
 					]
 				}
