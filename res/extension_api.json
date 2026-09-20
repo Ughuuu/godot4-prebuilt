@@ -89985,6 +89985,12 @@
 			"properties": [
 				{
 					"type": "int",
+					"name": "sky_mode",
+					"setter": "set_sky_mode",
+					"getter": "get_sky_mode"
+				},
+				{
+					"type": "int",
 					"name": "directional_shadow_mode",
 					"setter": "set_shadow_mode",
 					"getter": "get_shadow_mode"
@@ -90036,12 +90042,6 @@
 					"setter": "set_param",
 					"getter": "get_param",
 					"index": 16
-				},
-				{
-					"type": "int",
-					"name": "sky_mode",
-					"setter": "set_sky_mode",
-					"getter": "get_sky_mode"
 				}
 			]
 		},
