@@ -3,8 +3,8 @@
     "versions": {
         "godot": "nightly",
         "godot_full": "4.8.rc.custom_build.7c97c2977",
-        "rust": "1.100.0",
+        "rust": "1.100.1",
         "bindgen": "0.68.1"
     },
-    "created_ts": 1795791749
+    "created_ts": 1795875043
 }
